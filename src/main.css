@@ -1,0 +1,177 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #e8dbfa;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.greet {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #5C5470;
+
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #5C5470;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #5C5470;
+}
+
+h4 {
+    font-size: 1rem;
+    text-align: center;
+    color: #5C5470;
+}
+
+.name {
+    width: 10%;
+    border: 1px solid #5C5470;
+    border-radius: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #e8dbfa;
+    color: #FE7BE5;
+    outline: none;
+    margin-left: 1rem;
+}
+
+
+/* select all inputs except the class name { */
+input:not(.name) {
+    padding: 0.5rem;
+    border: 1px solid #5C5470;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+/* select the checkbox */
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #5C5470;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #5C5470;
+    color: #DFCCFB;
+}
+
+button:hover {
+    background-color: #DFCCFB;
+    color: #5C5470;
+}
+
+.create-todo {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-todo {
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.todo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+}
+
+input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+}
+
+.todo-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-add {
+    width: 40%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #5C5470;
+    color: #DFCCFB;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.btn-add:hover {
+    background-color: #BEADFA;
+    border: 1px solid #BEADFA;
+}
+
+.delete,
+.edit {
+    margin: 0 0.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.delete:hover,
+.edit:hover {
+    background-color: #BEADFA;
+    border: 1px solid #BEADFA;
+}
