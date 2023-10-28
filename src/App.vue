@@ -2,7 +2,6 @@
 import { ref, onMounted, computed, watch } from "vue";
 
 const todos = ref([])
-const name = ref('')
 
 const inputContent = ref('')
 
@@ -41,12 +40,7 @@ watch(todos, (newValue) => {
   localStorage.setItem('todos', JSON.stringify(newValue))
 }, { deep: true })
 
-watch(name, (newVal) => {
-  localStorage.setItem('name', newVal)
-})
-
 onMounted(() => {
-  name.value = localStorage.getItem('name') || ''
   todos.value = JSON.parse(localStorage.getItem('todos')) || []
 })
 
@@ -56,8 +50,7 @@ onMounted(() => {
   <main class="app">
     <section class="greet">
       <h1 class="title">
-        Hello:
-      <input type="text" placeholder="Your Name" v-model="name" class="name"/>
+        Hello
       </h1>
     </section>
     <h2>What's on your todo list?</h2>
@@ -70,7 +63,7 @@ onMounted(() => {
     </section>
 
     <section class="todo-list">
-      <h1>Your To Do List:</h1>
+      <h1>Your List:</h1>
       <div class="list">
         <div v-for="todo in toDos" :class="`todo-item ${todo.done && 'done'}`">
           <div class="todo-content"
